@@ -1,0 +1,1407 @@
+
+
+============================== 2022-10-12 03:57:39.567638 | c73a3c95-c2b0-45f8-9ee1-0c5936d0d0e4 ==============================
+[0m03:57:39.567638 [info ] [MainThread]: Running with dbt=1.2.2
+[0m03:57:39.568637 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\swprabha\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m03:57:39.568637 [debug] [MainThread]: Tracking: tracking
+[0m03:57:39.569661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F16E34970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F16E34AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F16E34BB0>]}
+[0m03:57:39.770083 [debug] [MainThread]: Executing "git --help"
+[0m03:57:39.826257 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:57:39.827280 [debug] [MainThread]: STDERR: "b''"
+[0m03:57:39.833510 [debug] [MainThread]: Acquiring new redshift connection "debug"
+[0m03:57:39.833510 [debug] [MainThread]: Using redshift connection "debug"
+[0m03:57:39.833510 [debug] [MainThread]: On debug: select 1 as id
+[0m03:57:39.833510 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:57:39.833510 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:40.323742 [debug] [MainThread]: SQL status: SELECT in 0.49 seconds
+[0m03:57:40.325813 [debug] [MainThread]: On debug: Close
+[0m03:57:40.332549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F14A307C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F14A2CBB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F14A2C790>]}
+[0m03:57:40.333645 [debug] [MainThread]: Flushing usage events
+[0m03:57:40.547435 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-10-12 03:57:46.995062 | a56dabd2-71f4-4de6-8368-c337e9b34d4d ==============================
+[0m03:57:46.995062 [info ] [MainThread]: Running with dbt=1.2.2
+[0m03:57:46.996065 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\swprabha\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m03:57:46.996065 [debug] [MainThread]: Tracking: tracking
+[0m03:57:46.996994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384098ED60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384098EE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384098E670>]}
+[0m03:57:47.008051 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m03:57:47.008952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238409B64F0>]}
+[0m03:57:47.062827 [debug] [MainThread]: Parsing macros\adapters.sql
+[0m03:57:47.081891 [debug] [MainThread]: Parsing macros\catalog.sql
+[0m03:57:47.091107 [debug] [MainThread]: Parsing macros\relations.sql
+[0m03:57:47.091107 [debug] [MainThread]: Parsing macros\adapters\apply_grants.sql
+[0m03:57:47.091107 [debug] [MainThread]: Parsing macros\materializations\snapshot_merge.sql
+[0m03:57:47.092107 [debug] [MainThread]: Parsing macros\utils\cast_bool_to_text.sql
+[0m03:57:47.092107 [debug] [MainThread]: Parsing macros\utils\dateadd.sql
+[0m03:57:47.093107 [debug] [MainThread]: Parsing macros\utils\datediff.sql
+[0m03:57:47.093107 [debug] [MainThread]: Parsing macros\utils\last_day.sql
+[0m03:57:47.094108 [debug] [MainThread]: Parsing macros\utils\length.sql
+[0m03:57:47.094108 [debug] [MainThread]: Parsing macros\utils\listagg.sql
+[0m03:57:47.096106 [debug] [MainThread]: Parsing macros\utils\split_part.sql
+[0m03:57:47.097105 [debug] [MainThread]: Parsing macros\adapters.sql
+[0m03:57:47.115331 [debug] [MainThread]: Parsing macros\catalog.sql
+[0m03:57:47.116954 [debug] [MainThread]: Parsing macros\relations.sql
+[0m03:57:47.117454 [debug] [MainThread]: Parsing macros\materializations\snapshot_merge.sql
+[0m03:57:47.118459 [debug] [MainThread]: Parsing macros\utils\any_value.sql
+[0m03:57:47.119459 [debug] [MainThread]: Parsing macros\utils\dateadd.sql
+[0m03:57:47.119459 [debug] [MainThread]: Parsing macros\utils\datediff.sql
+[0m03:57:47.124293 [debug] [MainThread]: Parsing macros\utils\last_day.sql
+[0m03:57:47.125388 [debug] [MainThread]: Parsing macros\utils\listagg.sql
+[0m03:57:47.125388 [debug] [MainThread]: Parsing macros\utils\split_part.sql
+[0m03:57:47.126368 [debug] [MainThread]: Parsing macros\adapters\apply_grants.sql
+[0m03:57:47.135368 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+[0m03:57:47.141644 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+[0m03:57:47.143560 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+[0m03:57:47.144644 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+[0m03:57:47.149639 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+[0m03:57:47.152652 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+[0m03:57:47.161644 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+[0m03:57:47.162639 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+[0m03:57:47.168972 [debug] [MainThread]: Parsing macros\etc\statement.sql
+[0m03:57:47.171075 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+[0m03:57:47.172057 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+[0m03:57:47.173081 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+[0m03:57:47.173081 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+[0m03:57:47.174061 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+[0m03:57:47.175058 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+[0m03:57:47.175978 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+[0m03:57:47.178054 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+[0m03:57:47.179053 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+[0m03:57:47.182112 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+[0m03:57:47.185048 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+[0m03:57:47.191056 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+[0m03:57:47.191975 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+[0m03:57:47.201083 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+[0m03:57:47.210975 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+[0m03:57:47.213026 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+[0m03:57:47.216972 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+[0m03:57:47.219010 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+[0m03:57:47.221089 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+[0m03:57:47.221089 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+[0m03:57:47.225057 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+[0m03:57:47.236996 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+[0m03:57:47.241086 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+[0m03:57:47.250052 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+[0m03:57:47.257077 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+[0m03:57:47.258055 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+[0m03:57:47.268049 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+[0m03:57:47.269055 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+[0m03:57:47.272080 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+[0m03:57:47.273049 [debug] [MainThread]: Parsing macros\utils\any_value.sql
+[0m03:57:47.274067 [debug] [MainThread]: Parsing macros\utils\bool_or.sql
+[0m03:57:47.274067 [debug] [MainThread]: Parsing macros\utils\cast_bool_to_text.sql
+[0m03:57:47.275059 [debug] [MainThread]: Parsing macros\utils\concat.sql
+[0m03:57:47.276083 [debug] [MainThread]: Parsing macros\utils\data_types.sql
+[0m03:57:47.279056 [debug] [MainThread]: Parsing macros\utils\dateadd.sql
+[0m03:57:47.280066 [debug] [MainThread]: Parsing macros\utils\datediff.sql
+[0m03:57:47.281051 [debug] [MainThread]: Parsing macros\utils\date_trunc.sql
+[0m03:57:47.282055 [debug] [MainThread]: Parsing macros\utils\escape_single_quotes.sql
+[0m03:57:47.282055 [debug] [MainThread]: Parsing macros\utils\except.sql
+[0m03:57:47.283081 [debug] [MainThread]: Parsing macros\utils\hash.sql
+[0m03:57:47.284056 [debug] [MainThread]: Parsing macros\utils\intersect.sql
+[0m03:57:47.284056 [debug] [MainThread]: Parsing macros\utils\last_day.sql
+[0m03:57:47.286055 [debug] [MainThread]: Parsing macros\utils\length.sql
+[0m03:57:47.286055 [debug] [MainThread]: Parsing macros\utils\listagg.sql
+[0m03:57:47.288057 [debug] [MainThread]: Parsing macros\utils\literal.sql
+[0m03:57:47.288057 [debug] [MainThread]: Parsing macros\utils\position.sql
+[0m03:57:47.289054 [debug] [MainThread]: Parsing macros\utils\replace.sql
+[0m03:57:47.290055 [debug] [MainThread]: Parsing macros\utils\right.sql
+[0m03:57:47.290055 [debug] [MainThread]: Parsing macros\utils\safe_cast.sql
+[0m03:57:47.291081 [debug] [MainThread]: Parsing macros\utils\split_part.sql
+[0m03:57:47.292056 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+[0m03:57:47.458823 [debug] [MainThread]: 1699: static parser successfully parsed hrst\update_source_last_send_individual.sql
+[0m03:57:47.468849 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_email_d.sql
+[0m03:57:47.471943 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_email_individual_bridge.sql
+[0m03:57:47.473849 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_email_individual_bridge_distinct_alterian.sql
+[0m03:57:47.476851 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_individual_alterian_driver.sql
+[0m03:57:47.484022 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_individual_d.sql
+[0m03:57:47.486025 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_individual_f.sql
+[0m03:57:47.488021 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_individual_flags_d.sql
+[0m03:57:47.491023 [debug] [MainThread]: 1699: static parser successfully parsed hrst\wt_nielsen_dma_d.sql
+[0m03:57:47.541315 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.redshift_demo.example
+
+[0m03:57:47.547316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238436F70D0>]}
+[0m03:57:47.554407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238409B6340>]}
+[0m03:57:47.554407 [info ] [MainThread]: Found 9 models, 4 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 7 sources, 0 exposures, 0 metrics
+[0m03:57:47.555408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238436F7100>]}
+[0m03:57:47.556408 [info ] [MainThread]: 
+[0m03:57:47.557408 [debug] [MainThread]: Acquiring new redshift connection "master"
+[0m03:57:47.559410 [debug] [ThreadPool]: Acquiring new redshift connection "list_dev"
+[0m03:57:47.567410 [debug] [ThreadPool]: Using redshift connection "list_dev"
+[0m03:57:47.568410 [debug] [ThreadPool]: On list_dev: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "connection_name": "list_dev"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m03:57:47.568410 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:57:47.568410 [debug] [ThreadPool]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:48.015657 [debug] [ThreadPool]: SQL status: SELECT in 0.45 seconds
+[0m03:57:48.018743 [debug] [ThreadPool]: On list_dev: Close
+[0m03:57:48.020679 [debug] [ThreadPool]: Acquiring new redshift connection "list_dev_hrst"
+[0m03:57:48.028748 [debug] [ThreadPool]: Using redshift connection "list_dev_hrst"
+[0m03:57:48.028748 [debug] [ThreadPool]: On list_dev_hrst: BEGIN
+[0m03:57:48.029719 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:57:48.029719 [debug] [ThreadPool]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:48.412496 [debug] [ThreadPool]: SQL status: BEGIN in 0.38 seconds
+[0m03:57:48.412496 [debug] [ThreadPool]: Using redshift connection "list_dev_hrst"
+[0m03:57:48.413521 [debug] [ThreadPool]: On list_dev_hrst: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "connection_name": "list_dev_hrst"} */
+select
+      'dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'hrst'
+    union all
+    select
+      'dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'hrst'
+  
+[0m03:57:48.471339 [debug] [ThreadPool]: SQL status: SELECT in 0.06 seconds
+[0m03:57:48.475440 [debug] [ThreadPool]: On list_dev_hrst: ROLLBACK
+[0m03:57:48.516832 [debug] [ThreadPool]: On list_dev_hrst: Close
+[0m03:57:48.521181 [debug] [MainThread]: Using redshift connection "master"
+[0m03:57:48.521181 [debug] [MainThread]: On master: BEGIN
+[0m03:57:48.521181 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:57:48.522253 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:48.910452 [debug] [MainThread]: SQL status: BEGIN in 0.39 seconds
+[0m03:57:48.911306 [debug] [MainThread]: Using redshift connection "master"
+[0m03:57:48.911306 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:57:48.995783 [debug] [MainThread]: SQL status: SELECT in 0.08 seconds
+[0m03:57:48.998798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238436F78B0>]}
+[0m03:57:48.999802 [debug] [MainThread]: On master: ROLLBACK
+[0m03:57:49.036817 [debug] [MainThread]: Using redshift connection "master"
+[0m03:57:49.036817 [debug] [MainThread]: On master: BEGIN
+[0m03:57:49.108180 [debug] [MainThread]: SQL status: BEGIN in 0.07 seconds
+[0m03:57:49.109166 [debug] [MainThread]: On master: COMMIT
+[0m03:57:49.109166 [debug] [MainThread]: Using redshift connection "master"
+[0m03:57:49.109166 [debug] [MainThread]: On master: COMMIT
+[0m03:57:49.151703 [debug] [MainThread]: SQL status: COMMIT in 0.04 seconds
+[0m03:57:49.151703 [debug] [MainThread]: On master: Close
+[0m03:57:49.153724 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:57:49.154722 [info ] [MainThread]: 
+[0m03:57:49.163354 [debug] [Thread-1  ]: Began running node model.redshift_demo.update_source_last_send_individual
+[0m03:57:49.163354 [info ] [Thread-1  ]: 1 of 9 START table model hrst.source_last_send_alterian ........................ [RUN]
+[0m03:57:49.164480 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.164480 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.update_source_last_send_individual
+[0m03:57:49.164480 [debug] [Thread-1  ]: Compiling model.redshift_demo.update_source_last_send_individual
+[0m03:57:49.167361 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.170697 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:49.170697 [debug] [Thread-1  ]: Began executing node model.redshift_demo.update_source_last_send_individual
+[0m03:57:49.205246 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.206464 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.207527 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: BEGIN
+[0m03:57:49.207582 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m03:57:49.207582 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:49.578245 [debug] [Thread-1  ]: SQL status: BEGIN in 0.37 seconds
+[0m03:57:49.578245 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.578245 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.update_source_last_send_individual"} */
+
+
+  create  table
+    "dev"."hrst"."source_last_send_alterian__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+WITH update_source_last_send_individual AS (
+    SELECT
+    source, 
+    source_id,
+    CASE
+        WHEN source = 'wt_individual_d' THEN getdate()
+        ELSE updatedate
+    END AS updatedate
+
+FROM "dev"."hrst_stg"."source_last_send_alterian"
+)
+
+SELECT * FROM update_source_last_send_individual
+  );
+[0m03:57:49.661442 [debug] [Thread-1  ]: SQL status: SELECT in 0.08 seconds
+[0m03:57:49.669317 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.669317 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.update_source_last_send_individual"} */
+alter table "dev"."hrst"."source_last_send_alterian" rename to "source_last_send_alterian__dbt_backup"
+[0m03:57:49.707000 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:49.711994 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.711994 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.update_source_last_send_individual"} */
+alter table "dev"."hrst"."source_last_send_alterian__dbt_tmp" rename to "source_last_send_alterian"
+[0m03:57:49.748286 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:49.771297 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: COMMIT
+[0m03:57:49.771297 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.771297 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: COMMIT
+[0m03:57:49.836193 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:49.837298 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.837298 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: BEGIN
+[0m03:57:49.875449 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:57:49.886381 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.886381 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.update_source_last_send_individual"} */
+drop table if exists "dev"."hrst"."source_last_send_alterian__dbt_backup" cascade
+[0m03:57:49.922137 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:57:49.923300 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: COMMIT
+[0m03:57:49.923516 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.923574 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: COMMIT
+[0m03:57:49.977532 [debug] [Thread-1  ]: SQL status: COMMIT in 0.05 seconds
+[0m03:57:49.977532 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.update_source_last_send_individual"
+[0m03:57:49.978531 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: BEGIN
+[0m03:57:50.013590 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:57:50.014613 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:50.015609 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: ROLLBACK
+[0m03:57:50.050672 [debug] [Thread-1  ]: On model.redshift_demo.update_source_last_send_individual: Close
+[0m03:57:50.051777 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238437C59A0>]}
+[0m03:57:50.052769 [info ] [Thread-1  ]: 1 of 9 OK created table model hrst.source_last_send_alterian ................... [[32mSELECT[0m in 0.89s]
+[0m03:57:50.056690 [debug] [Thread-1  ]: Finished running node model.redshift_demo.update_source_last_send_individual
+[0m03:57:50.057689 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_email_d
+[0m03:57:50.057689 [info ] [Thread-1  ]: 2 of 9 START table model hrst.wt_email_d ....................................... [RUN]
+[0m03:57:50.059701 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.059701 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_email_d
+[0m03:57:50.060693 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_email_d
+[0m03:57:50.063792 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_email_d"
+[0m03:57:50.064771 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:50.064771 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_email_d
+[0m03:57:50.068736 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_email_d"
+[0m03:57:50.069770 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.069770 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: BEGIN
+[0m03:57:50.069770 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:57:50.069770 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:50.453506 [debug] [Thread-1  ]: SQL status: BEGIN in 0.38 seconds
+[0m03:57:50.453506 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.453506 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_d"} */
+
+
+  create  table
+    "dev"."hrst"."wt_email_d__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+
+WITH wt_email_d AS (
+	SELECT 
+		*
+	FROM "dev"."hrst"."wt_email_d"
+
+)
+
+SELECT * FROM wt_email_d
+  );
+[0m03:57:50.713171 [debug] [Thread-1  ]: SQL status: SELECT in 0.26 seconds
+[0m03:57:50.718907 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.718907 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_d"} */
+alter table "dev"."hrst"."wt_email_d" rename to "wt_email_d__dbt_backup"
+[0m03:57:50.759555 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:50.765528 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.766536 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_d"} */
+alter table "dev"."hrst"."wt_email_d__dbt_tmp" rename to "wt_email_d"
+[0m03:57:50.804497 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:50.809434 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: COMMIT
+[0m03:57:50.810432 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.810432 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: COMMIT
+[0m03:57:50.874220 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:50.876296 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.876296 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: BEGIN
+[0m03:57:50.912632 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:57:50.919739 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.919739 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_d"} */
+drop table if exists "dev"."hrst"."wt_email_d__dbt_backup" cascade
+[0m03:57:50.963850 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:57:50.964845 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: COMMIT
+[0m03:57:50.964845 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:50.964845 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: COMMIT
+[0m03:57:51.027988 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:51.027988 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_d"
+[0m03:57:51.028991 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: BEGIN
+[0m03:57:51.069524 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:57:51.070548 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:51.070548 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: ROLLBACK
+[0m03:57:51.106237 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_d: Close
+[0m03:57:51.108240 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023843866D90>]}
+[0m03:57:51.109237 [info ] [Thread-1  ]: 2 of 9 OK created table model hrst.wt_email_d .................................. [[32mSELECT[0m in 1.05s]
+[0m03:57:51.113237 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_email_d
+[0m03:57:51.113237 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_email_individual_bridge
+[0m03:57:51.114240 [info ] [Thread-1  ]: 3 of 9 START table model hrst.wt_email_individual_bridge ....................... [RUN]
+[0m03:57:51.116236 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.116236 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_email_individual_bridge
+[0m03:57:51.116236 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_email_individual_bridge
+[0m03:57:51.121228 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.127360 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:51.127360 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_email_individual_bridge
+[0m03:57:51.131358 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.132216 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.132216 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: BEGIN
+[0m03:57:51.132216 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:57:51.132216 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:51.540346 [debug] [Thread-1  ]: SQL status: BEGIN in 0.41 seconds
+[0m03:57:51.541449 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.541449 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge"} */
+
+
+  create  table
+    "dev"."hrst"."wt_email_individual_bridge__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+
+WITH wt_email_individual_bridge AS (
+	SELECT 
+		individual_sk as email_individual_sk,
+	        individual_sk,
+		email_sk,
+		update_dt
+	FROM "dev"."hrst"."wt_email_individual_bridge"
+
+)
+
+SELECT * FROM wt_email_individual_bridge
+  );
+[0m03:57:51.697014 [debug] [Thread-1  ]: SQL status: SELECT in 0.15 seconds
+[0m03:57:51.699799 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.700296 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge"} */
+alter table "dev"."hrst"."wt_email_individual_bridge" rename to "wt_email_individual_bridge__dbt_backup"
+[0m03:57:51.738073 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:51.743098 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.743098 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge"} */
+alter table "dev"."hrst"."wt_email_individual_bridge__dbt_tmp" rename to "wt_email_individual_bridge"
+[0m03:57:51.784108 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:51.790122 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: COMMIT
+[0m03:57:51.790122 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.790122 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: COMMIT
+[0m03:57:51.858741 [debug] [Thread-1  ]: SQL status: COMMIT in 0.07 seconds
+[0m03:57:51.859708 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.859708 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: BEGIN
+[0m03:57:51.895034 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m03:57:51.899904 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.899904 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge"} */
+drop table if exists "dev"."hrst"."wt_email_individual_bridge__dbt_backup" cascade
+[0m03:57:51.942351 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:57:51.944375 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: COMMIT
+[0m03:57:51.945372 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:51.945372 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: COMMIT
+[0m03:57:52.006763 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:52.008450 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge"
+[0m03:57:52.008450 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: BEGIN
+[0m03:57:52.045374 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:57:52.046359 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:52.046359 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: ROLLBACK
+[0m03:57:52.086158 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge: Close
+[0m03:57:52.087216 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384380ADC0>]}
+[0m03:57:52.088246 [info ] [Thread-1  ]: 3 of 9 OK created table model hrst.wt_email_individual_bridge .................. [[32mSELECT[0m in 0.97s]
+[0m03:57:52.089233 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_email_individual_bridge
+[0m03:57:52.090169 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_individual_d
+[0m03:57:52.090169 [info ] [Thread-1  ]: 4 of 9 START table model hrst.wt_individual_d .................................. [RUN]
+[0m03:57:52.091168 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.091168 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_individual_d
+[0m03:57:52.091168 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_individual_d
+[0m03:57:52.093168 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_individual_d"
+[0m03:57:52.094169 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:52.095168 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_individual_d
+[0m03:57:52.098167 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_individual_d"
+[0m03:57:52.099168 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.099168 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: BEGIN
+[0m03:57:52.099168 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:57:52.099168 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:52.467412 [debug] [Thread-1  ]: SQL status: BEGIN in 0.37 seconds
+[0m03:57:52.467412 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.468437 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_d"} */
+
+
+  create  table
+    "dev"."hrst"."wt_individual_d__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+with wt_individual_d as (
+
+    SELECT
+    *
+    FROM "dev"."hrst"."wt_individual_d"
+)
+
+SELECT * FROM wt_individual_d
+  );
+[0m03:57:52.666472 [debug] [Thread-1  ]: SQL status: SELECT in 0.2 seconds
+[0m03:57:52.672480 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.672480 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_d"} */
+alter table "dev"."hrst"."wt_individual_d" rename to "wt_individual_d__dbt_backup"
+[0m03:57:52.707225 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.03 seconds
+[0m03:57:52.715243 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.716243 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_d"} */
+alter table "dev"."hrst"."wt_individual_d__dbt_tmp" rename to "wt_individual_d"
+[0m03:57:52.751252 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:52.753260 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: COMMIT
+[0m03:57:52.753260 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.753260 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: COMMIT
+[0m03:57:52.815108 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:52.815108 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.815108 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: BEGIN
+[0m03:57:52.849747 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m03:57:52.881044 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.882044 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_d"} */
+drop table if exists "dev"."hrst"."wt_individual_d__dbt_backup" cascade
+[0m03:57:52.921517 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:57:52.923533 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: COMMIT
+[0m03:57:52.923533 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.923533 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: COMMIT
+[0m03:57:52.983523 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:52.983523 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_d"
+[0m03:57:52.984548 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: BEGIN
+[0m03:57:53.023830 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:57:53.025938 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:53.025938 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: ROLLBACK
+[0m03:57:53.066084 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_d: Close
+[0m03:57:53.067782 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384096CB50>]}
+[0m03:57:53.068882 [info ] [Thread-1  ]: 4 of 9 OK created table model hrst.wt_individual_d ............................. [[32mSELECT[0m in 0.98s]
+[0m03:57:53.071772 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_individual_d
+[0m03:57:53.072774 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_individual_flags_d
+[0m03:57:53.073782 [info ] [Thread-1  ]: 5 of 9 START table model hrst.wt_individual_flags_d ............................ [RUN]
+[0m03:57:53.075768 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:53.075768 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_individual_flags_d
+[0m03:57:53.076766 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_individual_flags_d
+[0m03:57:53.080759 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:53.081759 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:53.082765 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_individual_flags_d
+[0m03:57:53.086760 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:53.087759 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:53.087759 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: BEGIN
+[0m03:57:53.087759 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:57:53.088760 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:57:53.495515 [debug] [Thread-1  ]: SQL status: BEGIN in 0.41 seconds
+[0m03:57:53.496576 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:53.496576 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_flags_d"} */
+
+
+  create  table
+    "dev"."hrst"."wt_individual_flags_d__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+with wt_individual_flags_d as (
+
+    SELECT
+    *
+    FROM "dev"."hrst"."wt_individual_flags_d"
+)
+SELECT * FROM wt_individual_flags_d
+  );
+[0m03:57:59.490539 [debug] [Thread-1  ]: SQL status: SELECT in 5.99 seconds
+[0m03:57:59.496625 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.496625 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_flags_d"} */
+alter table "dev"."hrst"."wt_individual_flags_d" rename to "wt_individual_flags_d__dbt_backup"
+[0m03:57:59.536140 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:59.538157 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.538157 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_flags_d"} */
+alter table "dev"."hrst"."wt_individual_flags_d__dbt_tmp" rename to "wt_individual_flags_d"
+[0m03:57:59.574291 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:57:59.576313 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: COMMIT
+[0m03:57:59.577313 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.577313 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: COMMIT
+[0m03:57:59.636003 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:59.637027 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.637027 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: BEGIN
+[0m03:57:59.671570 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m03:57:59.675559 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.676563 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_flags_d"} */
+drop table if exists "dev"."hrst"."wt_individual_flags_d__dbt_backup" cascade
+[0m03:57:59.713655 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:57:59.715628 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: COMMIT
+[0m03:57:59.716602 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.716602 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: COMMIT
+[0m03:57:59.775662 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:57:59.776775 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_flags_d"
+[0m03:57:59.776775 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: BEGIN
+[0m03:57:59.811204 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m03:57:59.812310 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:59.813304 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: ROLLBACK
+[0m03:57:59.846630 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_flags_d: Close
+[0m03:57:59.848299 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238436D4190>]}
+[0m03:57:59.849314 [info ] [Thread-1  ]: 5 of 9 OK created table model hrst.wt_individual_flags_d ....................... [[32mSELECT[0m in 6.77s]
+[0m03:57:59.853294 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_individual_flags_d
+[0m03:57:59.854313 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_nielsen_dma_d
+[0m03:57:59.855420 [info ] [Thread-1  ]: 6 of 9 START table model hrst.wt_nielsen_dma_d ................................. [RUN]
+[0m03:57:59.857322 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:57:59.857322 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_nielsen_dma_d
+[0m03:57:59.858311 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_nielsen_dma_d
+[0m03:57:59.861390 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:57:59.863349 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:57:59.863349 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_nielsen_dma_d
+[0m03:57:59.866415 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:57:59.868315 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:57:59.868315 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: BEGIN
+[0m03:57:59.868315 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:57:59.868315 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:00.304989 [debug] [Thread-1  ]: SQL status: BEGIN in 0.44 seconds
+[0m03:58:00.304989 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.306102 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_nielsen_dma_d"} */
+
+
+  create  table
+    "dev"."hrst"."wt_nielsen_dma_d__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+with wt_nielsen_dma_d as (
+
+    SELECT
+    *
+    FROM "dev"."hrst"."wt_nielsen_dma_d"
+)
+
+SELECT * FROM wt_nielsen_dma_d
+  );
+[0m03:58:00.393237 [debug] [Thread-1  ]: SQL status: SELECT in 0.09 seconds
+[0m03:58:00.396238 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.396238 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_nielsen_dma_d"} */
+alter table "dev"."hrst"."wt_nielsen_dma_d" rename to "wt_nielsen_dma_d__dbt_backup"
+[0m03:58:00.436076 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:00.439031 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.439031 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_nielsen_dma_d"} */
+alter table "dev"."hrst"."wt_nielsen_dma_d__dbt_tmp" rename to "wt_nielsen_dma_d"
+[0m03:58:00.480045 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:00.485032 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: COMMIT
+[0m03:58:00.485032 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.485032 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: COMMIT
+[0m03:58:00.549923 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:58:00.550962 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.552037 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: BEGIN
+[0m03:58:00.588865 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:58:00.592875 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.593909 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_nielsen_dma_d"} */
+drop table if exists "dev"."hrst"."wt_nielsen_dma_d__dbt_backup" cascade
+[0m03:58:00.638205 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:58:00.639163 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: COMMIT
+[0m03:58:00.639163 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.639163 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: COMMIT
+[0m03:58:00.695921 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:58:00.695921 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_nielsen_dma_d"
+[0m03:58:00.696944 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: BEGIN
+[0m03:58:00.736838 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:58:00.737873 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:00.738863 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: ROLLBACK
+[0m03:58:00.775167 [debug] [Thread-1  ]: On model.redshift_demo.wt_nielsen_dma_d: Close
+[0m03:58:00.776290 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238437C3EE0>]}
+[0m03:58:00.777306 [info ] [Thread-1  ]: 6 of 9 OK created table model hrst.wt_nielsen_dma_d ............................ [[32mSELECT[0m in 0.92s]
+[0m03:58:00.781705 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_nielsen_dma_d
+[0m03:58:00.781705 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_email_individual_bridge_distinct_alterian
+[0m03:58:00.782845 [info ] [Thread-1  ]: 7 of 9 START table model hrst.wt_email_individual_bridge_distinct_alterian ..... [RUN]
+[0m03:58:00.784676 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:00.785693 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_email_individual_bridge_distinct_alterian
+[0m03:58:00.785693 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_email_individual_bridge_distinct_alterian
+[0m03:58:00.790686 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:00.791686 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:00.791686 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_email_individual_bridge_distinct_alterian
+[0m03:58:00.794686 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:00.795685 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:00.795685 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: BEGIN
+[0m03:58:00.795685 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:58:00.795685 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:01.189142 [debug] [Thread-1  ]: SQL status: BEGIN in 0.39 seconds
+[0m03:58:01.190173 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:01.190173 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"} */
+
+
+  create  table
+    "dev"."hrst"."wt_email_individual_bridge_distinct_alterian__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+
+WITH wt_email_individual_bridge AS (
+	SELECT 
+		*
+	FROM "dev"."hrst"."wt_email_individual_bridge"
+
+),
+
+wt_email_d AS (
+	SELECT 
+		*
+	FROM "dev"."hrst"."wt_email_d"
+
+),
+
+
+wt_email_individual_bridge_distinct_alterian AS (
+	SELECT 
+		ib.individual_sk as email_individual_sk,
+		ib.individual_sk, 
+		ib.email_sk, 
+		ib.update_dt 
+	FROM   wt_email_individual_bridge ib 
+    JOIN wt_email_d e 
+    ON e.email_sk = ib.email_sk 
+    AND e.email_auth <> 'N' 
+    AND e.email_valid <> 'N' 
+	ORDER BY ib.update_dt DESC  
+
+)
+
+SELECT * FROM wt_email_individual_bridge_distinct_alterian
+  );
+[0m03:58:05.889772 [debug] [Thread-1  ]: SQL status: SELECT in 4.7 seconds
+[0m03:58:05.891768 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:05.891768 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"} */
+alter table "dev"."hrst"."wt_email_individual_bridge_distinct_alterian" rename to "wt_email_individual_bridge_distinct_alterian__dbt_backup"
+[0m03:58:05.932139 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:05.934277 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:05.934277 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"} */
+alter table "dev"."hrst"."wt_email_individual_bridge_distinct_alterian__dbt_tmp" rename to "wt_email_individual_bridge_distinct_alterian"
+[0m03:58:05.971617 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:05.972717 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: COMMIT
+[0m03:58:05.973697 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:05.973697 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: COMMIT
+[0m03:58:06.034591 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:58:06.034591 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:06.035607 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: BEGIN
+[0m03:58:06.072014 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:58:06.077099 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:06.077099 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"} */
+drop table if exists "dev"."hrst"."wt_email_individual_bridge_distinct_alterian__dbt_backup" cascade
+[0m03:58:06.113863 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:58:06.115901 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: COMMIT
+[0m03:58:06.115901 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:06.116902 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: COMMIT
+[0m03:58:06.173309 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:58:06.173309 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_email_individual_bridge_distinct_alterian"
+[0m03:58:06.174332 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: BEGIN
+[0m03:58:06.209576 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:58:06.211543 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:06.211543 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: ROLLBACK
+[0m03:58:06.248789 [debug] [Thread-1  ]: On model.redshift_demo.wt_email_individual_bridge_distinct_alterian: Close
+[0m03:58:06.249813 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023843771A00>]}
+[0m03:58:06.250808 [info ] [Thread-1  ]: 7 of 9 OK created table model hrst.wt_email_individual_bridge_distinct_alterian  [[32mSELECT[0m in 5.47s]
+[0m03:58:06.254959 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_email_individual_bridge_distinct_alterian
+[0m03:58:06.255839 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_individual_alterian_driver
+[0m03:58:06.256924 [info ] [Thread-1  ]: 8 of 9 START table model hrst.wt_individual_alterian_driver .................... [RUN]
+[0m03:58:06.258843 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.258843 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_individual_alterian_driver
+[0m03:58:06.258843 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_individual_alterian_driver
+[0m03:58:06.264882 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.266875 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:06.266875 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_individual_alterian_driver
+[0m03:58:06.270883 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.271883 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.271883 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: BEGIN
+[0m03:58:06.271883 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:58:06.272883 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:06.679203 [debug] [Thread-1  ]: SQL status: BEGIN in 0.41 seconds
+[0m03:58:06.679203 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.679203 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_alterian_driver"} */
+
+
+  create  table
+    "dev"."hrst"."wt_individual_alterian_driver__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+with wt_individual_d as (
+    SELECT     i.individual_sk,i.maint_dt
+                ,i.curr_rec_ind
+    FROM       "dev"."hrst"."wt_individual_d" i
+    INNER JOIN "dev"."hrst_stg"."source_last_send_alterian" slsa
+    ON         slsa.source = 'wt_individual_d'
+    WHERE      i.maint_dt > slsa.updatedate
+    AND 	   i.curr_rec_ind = 1
+),
+
+
+wt_individual_flags_d as (
+    SELECT     indf.individual_sk
+    FROM       "dev"."hrst"."wt_individual_flags_d" indf
+    INNER JOIN "dev"."hrst_stg"."source_last_send_alterian" slsa
+    ON         slsa.source = 'wt_individual_d'
+    WHERE      indf.update_dt > slsa.updatedate
+  ),
+
+wt_email_individual_bridge as(
+
+    SELECT     eib.individual_sk
+    FROM       "dev"."hrst"."wt_email_individual_bridge" eib
+    INNER JOIN "dev"."hrst_stg"."source_last_send_alterian" slsa
+    ON         slsa.source = 'wt_individual_d'
+    WHERE      eib.update_dt > slsa.updatedate
+),
+
+combined_result as (
+	    SELECT individual_sk from wt_email_individual_bridge
+	    UNION
+	    select individual_sk from wt_individual_flags_d
+	    UNION
+	    SELECT individual_sk from wt_individual_d
+)
+
+select * from combined_result
+  );
+[0m03:58:06.848695 [debug] [Thread-1  ]: SQL status: SELECT in 0.17 seconds
+[0m03:58:06.853806 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.853806 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_alterian_driver"} */
+alter table "dev"."hrst"."wt_individual_alterian_driver" rename to "wt_individual_alterian_driver__dbt_backup"
+[0m03:58:06.892584 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:06.898589 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.898589 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_alterian_driver"} */
+alter table "dev"."hrst"."wt_individual_alterian_driver__dbt_tmp" rename to "wt_individual_alterian_driver"
+[0m03:58:06.936101 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:06.942082 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: COMMIT
+[0m03:58:06.942082 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:06.942082 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: COMMIT
+[0m03:58:07.010481 [debug] [Thread-1  ]: SQL status: COMMIT in 0.07 seconds
+[0m03:58:07.011493 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:07.011493 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: BEGIN
+[0m03:58:07.045955 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m03:58:07.049965 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:07.049965 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_alterian_driver"} */
+drop table if exists "dev"."hrst"."wt_individual_alterian_driver__dbt_backup" cascade
+[0m03:58:07.090965 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:58:07.092986 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: COMMIT
+[0m03:58:07.093984 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:07.093984 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: COMMIT
+[0m03:58:07.151540 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:58:07.151540 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_alterian_driver"
+[0m03:58:07.152566 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: BEGIN
+[0m03:58:07.189491 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:58:07.190483 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:07.190483 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: ROLLBACK
+[0m03:58:07.230678 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_alterian_driver: Close
+[0m03:58:07.231703 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384388DD60>]}
+[0m03:58:07.233700 [info ] [Thread-1  ]: 8 of 9 OK created table model hrst.wt_individual_alterian_driver ............... [[32mSELECT[0m in 0.97s]
+[0m03:58:07.237744 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_individual_alterian_driver
+[0m03:58:07.238753 [debug] [Thread-1  ]: Began running node model.redshift_demo.wt_individual_f
+[0m03:58:07.239796 [info ] [Thread-1  ]: 9 of 9 START table model hrst.wt_individual_f .................................. [RUN]
+[0m03:58:07.241739 [debug] [Thread-1  ]: Acquiring new redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:07.241739 [debug] [Thread-1  ]: Began compiling node model.redshift_demo.wt_individual_f
+[0m03:58:07.241739 [debug] [Thread-1  ]: Compiling model.redshift_demo.wt_individual_f
+[0m03:58:07.246843 [debug] [Thread-1  ]: Writing injected SQL for node "model.redshift_demo.wt_individual_f"
+[0m03:58:07.247781 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:07.248738 [debug] [Thread-1  ]: Began executing node model.redshift_demo.wt_individual_f
+[0m03:58:07.251833 [debug] [Thread-1  ]: Writing runtime SQL for node "model.redshift_demo.wt_individual_f"
+[0m03:58:07.252827 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:07.252827 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: BEGIN
+[0m03:58:07.252827 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:58:07.253832 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:07.624009 [debug] [Thread-1  ]: SQL status: BEGIN in 0.37 seconds
+[0m03:58:07.625036 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:07.625036 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_f"} */
+
+
+  create  table
+    "dev"."hrst"."wt_individual_f__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+with wt_individual_f as (
+
+SELECT i.individual_sk, 
+       CASE 
+         WHEN i.household_id = 2 THEN 2 + i.individual_sk + 6000000000000
+         ELSE i.household_id
+       end                            AS household_id, 
+       CASE 
+         WHEN i.address_id = 2 THEN 2 + i.individual_sk + 6000000000000
+         ELSE i.address_id
+       end                            AS address_id,        
+       i.address_data_src, 
+       CASE 
+         WHEN i.business_name = i.name_description THEN NULL 
+         ELSE i.pre_name 
+       end                            AS pre_name, 
+       CASE 
+         WHEN i.business_name = i.name_description THEN NULL 
+         ELSE i.first_name 
+       end                            AS first_name, 
+       CASE 
+         WHEN i.business_name = i.name_description THEN NULL 
+         ELSE i.middle_name 
+       end                            AS middle_name,        
+       CASE 
+         WHEN i.business_name = i.name_description THEN NULL
+         ELSE i.last_name 
+       end                            AS last_name,        
+       CASE 
+         WHEN i.business_name = i.name_description THEN NULL 
+         ELSE i.suffix 
+       end                            AS suffix,        
+       i.name_type_cd, 
+       CASE 
+         WHEN i.name_type_cd = '1' THEN 'First Initial' 
+         WHEN i.name_type_cd = '2' THEN 'Full First Name' 
+         WHEN i.name_type_cd = '4' THEN 'Last Name Only' 
+         WHEN i.name_type_cd = '5' THEN 'Current Resindent' 
+         WHEN i.name_type_cd = ' ' THEN 'Business Only' 
+         ELSE 'default' 
+       end                            AS name_type_name,
+		 i.original_full_name, 
+       CASE
+		 WHEN  i.business_name = '' and i.name_description = '' THEN i.original_full_name
+		 WHEN  i.business_name is null and i.name_description is null THEN i.original_full_name
+         WHEN i.business_name = i.name_description THEN NULL 
+         ELSE i.name_description 
+       end                          AS full_name,
+       i.original_company_name,
+		 CASE     
+		 WHEN  i.business_name = '' and i.name_description = '' THEN i.original_company_name
+		 WHEN  i.business_name is null and i.name_description is null THEN i.original_company_name
+         ELSE i.business_name 
+       end                          AS business_name,     
+       i.address_line_1, 
+       i.address_line_2, 
+       i.city_name, 
+       i.state_province_region, 
+       i.postal_code, 
+       i.zip_plus4, 
+       i.scf_fsa, 
+       niel.county_size_cd                 AS nielsen_cd, 
+       CASE 
+         WHEN niel.county_size_cd = '6' THEN 'Highly Urbanized' 
+         WHEN niel.county_size_cd = '7' THEN 'Relatively Urbanized' 
+         WHEN niel.county_size_cd = '8' THEN 'Relatively Rural' 
+         WHEN niel.county_size_cd = '9' THEN 'Very Rural' 
+         ELSE 'default' 
+       end                            AS nielsen_name, 
+       niel.dma_cd                         AS dma_cd, 
+       niel.dma_name                       AS dma_name,
+       CASE 
+         WHEN i.state_province_region in ('AA', 'AE', 'AP') THEN 'A' 
+         WHEN i.state_province_region in ('AS','FM','GU','MP','PW','PR','VI') AND i.country = 'US' THEN 'P' 
+         WHEN i.state_province_region in ('AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL',
+                                         'IN','IA','KS','KY','LA','ME','MH','MD','MA','MI','MN','MS','MO','MT',
+                                         'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC',
+                                         'SD','TN','TX','UT','VT','VA','WA','WV','WI','WY') AND i.country = 'US' THEN 'U' 
+         WHEN i.state_province_region in ('AB','BC','MB','NB','NL','NS','NT','NU','ON','PE','QC','SK','YT') THEN 'C' 
+         WHEN i.country not in ('US', 'CANADA') THEN 'F' 
+         ELSE '' 
+       end                            AS country_typ_cd,
+       CASE 
+         WHEN i.state_province_region in ('AA', 'AE', 'AP') THEN 'APO/FPO' 
+         WHEN i.state_province_region in ('AS','FM','GU','MP','PW','PR','VI') AND i.country = 'US' THEN 'US Possession' 
+         WHEN i.state_province_region in ('AL','AK','AZ','AR','CA','CO','CT','DE','DC','FL','GA','HI','ID','IL',
+                                         'IN','IA','KS','KY','LA','ME','MH','MD','MA','MI','MN','MS','MO','MT',
+                                         'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC',
+                                         'SD','TN','TX','UT','VT','VA','WA','WV','WI','WY') AND i.country = 'US' THEN 'US' 
+         WHEN i.state_province_region in ('AB','BC','MB','NB','NL','NS','NT','NU','ON','PE','QC','SK','YT') THEN 'Canadian' 
+         WHEN i.country not in ('US', 'CANADA') THEN 'Foreign' 
+         ELSE 'default' 
+       end                            AS country_typ_name,
+ 		CASE
+		 WHEN i.part_CD in ('U', 'C') AND (i.hygiene_change_flag IN ('D', 'U') OR i.deliverability_score = 8) THEN  'U'
+		 WHEN i.deliverability_score = 6 AND i.part_CD = 'F' THEN  'U'
+ 	  	 else 'D'
+		end AS    delivery_status_cd,
+ 		CASE
+		 WHEN i.part_CD in ('U', 'C') AND (i.hygiene_change_flag IN ('D', 'U') OR i.deliverability_score = 8) THEN  'Undeliverable'
+		 WHEN i.deliverability_score = 6 AND i.part_CD = 'F' THEN  'Undeliverable'
+ 	  	 else 'Deliverable'
+		end                            AS delivery_status_name, 
+       i.delivery_point, 
+       i.carrier_route, 
+       i.deliverability_score, 
+       i.dsf2_record_type, 
+       i.coa_dt, 
+       i.coa_data_source, 
+       i.ncoa_run_dt, 
+       i.ncoa_move_type, 
+       i.ncoa_category, 
+       i.ncoa_footnote, 
+       i.ncoa_move_eff_dt, 
+       i.deceased_flag, 
+       i.pander_flag, 
+       i.vulgar_address_flag, 
+       i.vulgar_name_flag, 
+       indf.best_gender               AS best_gender, 
+       i.prison_flag, 
+       e.email_address, 
+       i.country
+--       ,Date_format(Now(), '%Y-%m-%d') AS load_dt 
+FROM   "dev"."hrst"."wt_individual_d" i 
+       INNER JOIN "dev"."hrst"."wt_individual_alterian_driver" iad 
+               ON i.individual_sk = iad.individual_sk 
+       LEFT OUTER JOIN "dev"."hrst"."wt_email_individual_bridge_distinct_alterian" eb 
+                    ON i.individual_sk = eb.individual_sk 
+       LEFT OUTER JOIN "dev"."hrst"."wt_email_d" e 
+                    ON eb.email_sk = e.email_sk 
+       LEFT OUTER JOIN "dev"."hrst"."wt_individual_flags_d" indf 
+                    ON i.individual_sk = indf.individual_sk 
+       LEFT OUTER JOIN "dev"."hrst"."wt_nielsen_dma_d" niel
+                    ON i.postal_code = niel.zip_cd
+                    AND i.country = 'US'
+
+WHERE i.curr_rec_ind = 1
+                    
+
+)
+
+SELECT * FROM wt_individual_f
+  );
+[0m03:58:12.081416 [debug] [Thread-1  ]: SQL status: SELECT in 4.46 seconds
+[0m03:58:12.084525 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.084525 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_f"} */
+alter table "dev"."hrst"."wt_individual_f" rename to "wt_individual_f__dbt_backup"
+[0m03:58:12.120534 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:12.123520 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.123520 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_f"} */
+alter table "dev"."hrst"."wt_individual_f__dbt_tmp" rename to "wt_individual_f"
+[0m03:58:12.158549 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.04 seconds
+[0m03:58:12.163552 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: COMMIT
+[0m03:58:12.163552 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.163552 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: COMMIT
+[0m03:58:12.220302 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+[0m03:58:12.221249 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.222253 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: BEGIN
+[0m03:58:12.256644 [debug] [Thread-1  ]: SQL status: BEGIN in 0.03 seconds
+[0m03:58:12.261661 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.261661 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "model.redshift_demo.wt_individual_f"} */
+drop table if exists "dev"."hrst"."wt_individual_f__dbt_backup" cascade
+[0m03:58:12.298511 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.04 seconds
+[0m03:58:12.300517 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: COMMIT
+[0m03:58:12.300517 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.301517 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: COMMIT
+[0m03:58:12.356304 [debug] [Thread-1  ]: SQL status: COMMIT in 0.05 seconds
+[0m03:58:12.357305 [debug] [Thread-1  ]: Using redshift connection "model.redshift_demo.wt_individual_f"
+[0m03:58:12.357305 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: BEGIN
+[0m03:58:12.394397 [debug] [Thread-1  ]: SQL status: BEGIN in 0.04 seconds
+[0m03:58:12.395391 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:12.395391 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: ROLLBACK
+[0m03:58:12.429111 [debug] [Thread-1  ]: On model.redshift_demo.wt_individual_f: Close
+[0m03:58:12.430187 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a56dabd2-71f4-4de6-8368-c337e9b34d4d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384378ED30>]}
+[0m03:58:12.431191 [info ] [Thread-1  ]: 9 of 9 OK created table model hrst.wt_individual_f ............................. [[32mSELECT[0m in 5.19s]
+[0m03:58:12.433104 [debug] [Thread-1  ]: Finished running node model.redshift_demo.wt_individual_f
+[0m03:58:12.434096 [debug] [MainThread]: Acquiring new redshift connection "master"
+[0m03:58:12.435096 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:12.435096 [debug] [MainThread]: On master: BEGIN
+[0m03:58:12.435096 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:58:12.435096 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:12.854820 [debug] [MainThread]: SQL status: BEGIN in 0.42 seconds
+[0m03:58:12.854820 [debug] [MainThread]: On master: COMMIT
+[0m03:58:12.855844 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:12.855844 [debug] [MainThread]: On master: COMMIT
+[0m03:58:12.903320 [debug] [MainThread]: SQL status: COMMIT in 0.05 seconds
+[0m03:58:12.904326 [debug] [MainThread]: On master: Close
+[0m03:58:12.905335 [info ] [MainThread]: 
+[0m03:58:12.906314 [info ] [MainThread]: Finished running 9 table models in 0 hours 0 minutes and 25.35 seconds (25.35s).
+[0m03:58:12.909320 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:58:12.910309 [debug] [MainThread]: Connection 'list_dev' was properly closed.
+[0m03:58:12.910309 [debug] [MainThread]: Connection 'list_dev_hrst' was properly closed.
+[0m03:58:12.910309 [debug] [MainThread]: Connection 'model.redshift_demo.wt_individual_f' was properly closed.
+[0m03:58:12.919750 [info ] [MainThread]: 
+[0m03:58:12.920644 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:58:12.921645 [info ] [MainThread]: 
+[0m03:58:12.921645 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 TOTAL=9
+[0m03:58:12.922661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002384384E040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238437C3520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238438415B0>]}
+[0m03:58:12.922661 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-12 03:58:18.232395 | 8d624f0f-dca5-4113-bea6-297d4f5dc2cf ==============================
+[0m03:58:18.232395 [info ] [MainThread]: Running with dbt=1.2.2
+[0m03:58:18.233397 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\swprabha\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m03:58:18.234474 [debug] [MainThread]: Tracking: tracking
+[0m03:58:18.234474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F75261BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F752617F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F75261E20>]}
+[0m03:58:18.296480 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:58:18.296480 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:58:18.296480 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.redshift_demo.example
+
+[0m03:58:18.302761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8d624f0f-dca5-4113-bea6-297d4f5dc2cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F77FCA0D0>]}
+[0m03:58:18.309809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8d624f0f-dca5-4113-bea6-297d4f5dc2cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F77EB54F0>]}
+[0m03:58:18.309809 [info ] [MainThread]: Found 9 models, 4 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 7 sources, 0 exposures, 0 metrics
+[0m03:58:18.310724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d624f0f-dca5-4113-bea6-297d4f5dc2cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F77EB5370>]}
+[0m03:58:18.311759 [info ] [MainThread]: 
+[0m03:58:18.312724 [debug] [MainThread]: Acquiring new redshift connection "master"
+[0m03:58:18.314723 [debug] [ThreadPool]: Acquiring new redshift connection "list_dev_hrst"
+[0m03:58:18.322722 [debug] [ThreadPool]: Using redshift connection "list_dev_hrst"
+[0m03:58:18.322722 [debug] [ThreadPool]: On list_dev_hrst: BEGIN
+[0m03:58:18.322722 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:58:18.322722 [debug] [ThreadPool]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:18.709893 [debug] [ThreadPool]: SQL status: BEGIN in 0.39 seconds
+[0m03:58:18.709893 [debug] [ThreadPool]: Using redshift connection "list_dev_hrst"
+[0m03:58:18.709893 [debug] [ThreadPool]: On list_dev_hrst: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "connection_name": "list_dev_hrst"} */
+select
+      'dev' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'hrst'
+    union all
+    select
+      'dev' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'hrst'
+  
+[0m03:58:18.766485 [debug] [ThreadPool]: SQL status: SELECT in 0.06 seconds
+[0m03:58:18.767398 [debug] [ThreadPool]: On list_dev_hrst: ROLLBACK
+[0m03:58:18.804053 [debug] [ThreadPool]: On list_dev_hrst: Close
+[0m03:58:18.814164 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:18.815148 [debug] [MainThread]: On master: BEGIN
+[0m03:58:18.815148 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:58:18.815148 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:19.167473 [debug] [MainThread]: SQL status: BEGIN in 0.35 seconds
+[0m03:58:19.167473 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:19.168492 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m03:58:19.253260 [debug] [MainThread]: SQL status: SELECT in 0.08 seconds
+[0m03:58:19.256373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d624f0f-dca5-4113-bea6-297d4f5dc2cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F75261670>]}
+[0m03:58:19.257364 [debug] [MainThread]: On master: ROLLBACK
+[0m03:58:19.293562 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:19.294630 [debug] [MainThread]: On master: BEGIN
+[0m03:58:19.365609 [debug] [MainThread]: SQL status: BEGIN in 0.07 seconds
+[0m03:58:19.366280 [debug] [MainThread]: On master: COMMIT
+[0m03:58:19.366280 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:19.366280 [debug] [MainThread]: On master: COMMIT
+[0m03:58:19.404367 [debug] [MainThread]: SQL status: COMMIT in 0.04 seconds
+[0m03:58:19.404367 [debug] [MainThread]: On master: Close
+[0m03:58:19.405461 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:58:19.406379 [info ] [MainThread]: 
+[0m03:58:19.412813 [debug] [Thread-1  ]: Began running node test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4
+[0m03:58:19.412813 [info ] [Thread-1  ]: 1 of 4 START test unique_wt_email_d_email_sk ................................... [RUN]
+[0m03:58:19.413899 [debug] [Thread-1  ]: Acquiring new redshift connection "test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4"
+[0m03:58:19.413899 [debug] [Thread-1  ]: Began compiling node test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4
+[0m03:58:19.414384 [debug] [Thread-1  ]: Compiling test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4
+[0m03:58:19.422247 [debug] [Thread-1  ]: Writing injected SQL for node "test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4"
+[0m03:58:19.424266 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:19.424266 [debug] [Thread-1  ]: Began executing node test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4
+[0m03:58:19.435359 [debug] [Thread-1  ]: Writing runtime SQL for node "test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4"
+[0m03:58:19.437280 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4"
+[0m03:58:19.437280 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4: BEGIN
+[0m03:58:19.437280 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m03:58:19.437280 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:19.832263 [debug] [Thread-1  ]: SQL status: BEGIN in 0.39 seconds
+[0m03:58:19.833124 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4"
+[0m03:58:19.833124 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    email_sk as unique_field,
+    count(*) as n_records
+
+from "dev"."hrst"."wt_email_d"
+where email_sk is not null
+group by email_sk
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m03:58:19.905518 [debug] [Thread-1  ]: SQL status: SELECT in 0.07 seconds
+[0m03:58:19.910533 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:19.910533 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4: ROLLBACK
+[0m03:58:19.950831 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4: Close
+[0m03:58:19.952830 [info ] [Thread-1  ]: 1 of 4 PASS unique_wt_email_d_email_sk ......................................... [[32mPASS[0m in 0.54s]
+[0m03:58:19.956239 [debug] [Thread-1  ]: Finished running node test.redshift_demo.unique_wt_email_d_email_sk.cfe5538ff4
+[0m03:58:19.957247 [debug] [Thread-1  ]: Began running node test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf
+[0m03:58:19.958319 [info ] [Thread-1  ]: 2 of 4 START test unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk  [RUN]
+[0m03:58:19.960236 [debug] [Thread-1  ]: Acquiring new redshift connection "test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf"
+[0m03:58:19.960236 [debug] [Thread-1  ]: Began compiling node test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf
+[0m03:58:19.960236 [debug] [Thread-1  ]: Compiling test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf
+[0m03:58:19.966996 [debug] [Thread-1  ]: Writing injected SQL for node "test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf"
+[0m03:58:19.968013 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:19.968013 [debug] [Thread-1  ]: Began executing node test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf
+[0m03:58:19.970096 [debug] [Thread-1  ]: Writing runtime SQL for node "test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf"
+[0m03:58:19.971029 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf"
+[0m03:58:19.971029 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf: BEGIN
+[0m03:58:19.971029 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:58:19.971029 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:20.353461 [debug] [Thread-1  ]: SQL status: BEGIN in 0.38 seconds
+[0m03:58:20.353461 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf"
+[0m03:58:20.354490 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    email_individual_sk as unique_field,
+    count(*) as n_records
+
+from "dev"."hrst"."wt_email_individual_bridge_distinct_alterian"
+where email_individual_sk is not null
+group by email_individual_sk
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m03:58:20.426410 [debug] [Thread-1  ]: SQL status: SELECT in 0.07 seconds
+[0m03:58:20.427411 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:20.427411 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf: ROLLBACK
+[0m03:58:20.467633 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf: Close
+[0m03:58:20.468631 [info ] [Thread-1  ]: 2 of 4 PASS unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk  [[32mPASS[0m in 0.51s]
+[0m03:58:20.471644 [debug] [Thread-1  ]: Finished running node test.redshift_demo.unique_wt_email_individual_bridge_distinct_alterian_email_individual_sk.555541dadf
+[0m03:58:20.471644 [debug] [Thread-1  ]: Began running node test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834
+[0m03:58:20.472638 [info ] [Thread-1  ]: 3 of 4 START test unique_wt_email_individual_bridge_email_individual_sk ........ [RUN]
+[0m03:58:20.472638 [debug] [Thread-1  ]: Acquiring new redshift connection "test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834"
+[0m03:58:20.473632 [debug] [Thread-1  ]: Began compiling node test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834
+[0m03:58:20.473632 [debug] [Thread-1  ]: Compiling test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834
+[0m03:58:20.477252 [debug] [Thread-1  ]: Writing injected SQL for node "test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834"
+[0m03:58:20.483843 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:20.483843 [debug] [Thread-1  ]: Began executing node test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834
+[0m03:58:20.486646 [debug] [Thread-1  ]: Writing runtime SQL for node "test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834"
+[0m03:58:20.488201 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834"
+[0m03:58:20.488201 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834: BEGIN
+[0m03:58:20.488201 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:58:20.488201 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:20.862291 [debug] [Thread-1  ]: SQL status: BEGIN in 0.37 seconds
+[0m03:58:20.862291 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834"
+[0m03:58:20.862291 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    email_individual_sk as unique_field,
+    count(*) as n_records
+
+from "dev"."hrst"."wt_email_individual_bridge"
+where email_individual_sk is not null
+group by email_individual_sk
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m03:58:20.945915 [debug] [Thread-1  ]: SQL status: SELECT in 0.08 seconds
+[0m03:58:20.949013 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:20.949013 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834: ROLLBACK
+[0m03:58:20.986699 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834: Close
+[0m03:58:20.987811 [info ] [Thread-1  ]: 3 of 4 PASS unique_wt_email_individual_bridge_email_individual_sk .............. [[32mPASS[0m in 0.52s]
+[0m03:58:20.991721 [debug] [Thread-1  ]: Finished running node test.redshift_demo.unique_wt_email_individual_bridge_email_individual_sk.6d83110834
+[0m03:58:20.992721 [debug] [Thread-1  ]: Began running node test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a
+[0m03:58:20.993728 [info ] [Thread-1  ]: 4 of 4 START test unique_wt_individual_alterian_driver_individual_sk ........... [RUN]
+[0m03:58:20.995574 [debug] [Thread-1  ]: Acquiring new redshift connection "test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a"
+[0m03:58:20.996127 [debug] [Thread-1  ]: Began compiling node test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a
+[0m03:58:20.996127 [debug] [Thread-1  ]: Compiling test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a
+[0m03:58:21.003210 [debug] [Thread-1  ]: Writing injected SQL for node "test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a"
+[0m03:58:21.004222 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:21.005231 [debug] [Thread-1  ]: Began executing node test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a
+[0m03:58:21.006214 [debug] [Thread-1  ]: Writing runtime SQL for node "test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a"
+[0m03:58:21.007206 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a"
+[0m03:58:21.008200 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a: BEGIN
+[0m03:58:21.008200 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m03:58:21.008200 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:21.389603 [debug] [Thread-1  ]: SQL status: BEGIN in 0.38 seconds
+[0m03:58:21.390632 [debug] [Thread-1  ]: Using redshift connection "test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a"
+[0m03:58:21.390632 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "redshift_demo", "target_name": "dev", "node_id": "test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    individual_sk as unique_field,
+    count(*) as n_records
+
+from "dev"."hrst"."wt_individual_alterian_driver"
+where individual_sk is not null
+group by individual_sk
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m03:58:21.466116 [debug] [Thread-1  ]: SQL status: SELECT in 0.07 seconds
+[0m03:58:21.469212 [debug] [Thread-1  ]: finished collecting timing info
+[0m03:58:21.470197 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a: ROLLBACK
+[0m03:58:21.508499 [debug] [Thread-1  ]: On test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a: Close
+[0m03:58:21.510498 [info ] [Thread-1  ]: 4 of 4 PASS unique_wt_individual_alterian_driver_individual_sk ................. [[32mPASS[0m in 0.52s]
+[0m03:58:21.514499 [debug] [Thread-1  ]: Finished running node test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a
+[0m03:58:21.516482 [debug] [MainThread]: Acquiring new redshift connection "master"
+[0m03:58:21.517489 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:21.517489 [debug] [MainThread]: On master: BEGIN
+[0m03:58:21.517489 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m03:58:21.517489 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m03:58:21.886874 [debug] [MainThread]: SQL status: BEGIN in 0.37 seconds
+[0m03:58:21.887833 [debug] [MainThread]: On master: COMMIT
+[0m03:58:21.887833 [debug] [MainThread]: Using redshift connection "master"
+[0m03:58:21.887833 [debug] [MainThread]: On master: COMMIT
+[0m03:58:21.925482 [debug] [MainThread]: SQL status: COMMIT in 0.04 seconds
+[0m03:58:21.925482 [debug] [MainThread]: On master: Close
+[0m03:58:21.926468 [info ] [MainThread]: 
+[0m03:58:21.926468 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 3.61 seconds (3.61s).
+[0m03:58:21.928468 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:58:21.929112 [debug] [MainThread]: Connection 'list_dev_hrst' was properly closed.
+[0m03:58:21.929112 [debug] [MainThread]: Connection 'test.redshift_demo.unique_wt_individual_alterian_driver_individual_sk.ac9282606a' was properly closed.
+[0m03:58:21.935166 [info ] [MainThread]: 
+[0m03:58:21.936150 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m03:58:21.937160 [info ] [MainThread]: 
+[0m03:58:21.937160 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m03:58:21.938162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F77F94E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F77FE6F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022F77FE6BE0>]}
+[0m03:58:21.938162 [debug] [MainThread]: Flushing usage events
